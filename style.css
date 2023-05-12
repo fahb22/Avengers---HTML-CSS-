@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+     padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header{
+ background-color: #111111;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding: 8px 24px;
+ row-gap: 8px;
+ column-gap: 24px;
+}
+
+
+header img {
+    width: 190px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+  margin-left: 24px;
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #f13330;
+}
+
+.hero {
+    height: 320px;
+    padding: 24px;
+
+    background-image: url(../images/banner.jpg );
+    background-size: cover;
+    background-position: center 25%;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.hero h1{
+    color: white;
+    font-size: 36;
+}
+
+.dots {
+    margin-top: 24px;
+    display: flex;
+}
+
+.dots span {
+    display: block;
+    background-color:  #ebebeb;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+ 
+    
+}
+
+.dots span + span {
+    margin-left: 8px;
+}
+
+.dots .actve{
+    background-color: red;
+}
+
+.gallery {
+
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+
+}
+
+.gallery h2 {
+color: #111111;
+margin-bottom: 32px;
+padding-left: 8px;
+border-left: 4px solid red;
+
+}
+
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row div {
+width: 350px;
+flex: 1 2 250px;
+
+}
+
+.gallery-row img {
+
+width: 100%;
+border-radius: 8px;
+margin-bottom: 16px;
+
+}
+
+.gallery p {
+
+    font-weight: bolder;
+}
+
+.history {
+
+    margin: 64px 0 0;
+    padding: 0px 24px 0;
+
+    background-color: #111111;
+    color: #ebebeb;
+
+    border-top: 4px solid red;
+}
+
+.history .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-bottom: 2px solid red;
+    gap: 24px;
+
+}
+
+.history .container .col {
+
+flex: 1 1 350px;
+
+
+}
+
+.history .container .col img {
+
+display: block;
+flex: 1 1 350px;
+width: 100%;
+
+}
+
+.history h2 {
+margin-bottom: 32px;
+padding-left: 8px;
+border-left: 4px solid red;
+}
+
+.history p {
+
+    line-height: 1.5;
+}
+
+.history a {
+    color: #f13330;
+}
+
+footer {
+    padding: 64px 24px;
+    background-color: black;
+    color: #ebebeb;
+    text-align: center;
+}
+
+footer a {
+    color: #f13330;
+}
